@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+:root{
+    --navbar-height: 59px;
+
+}
+/* Navigation bar */
+#navbar{
+    
+    font-family: 'Baloo Thambi 2', cursive;
+    display: flex;
+    
+    top: 0px;
+
+
+ }
+#navbar{
+    position: relative;
+} 
+
+ #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+
+    z-index: -1;
+    opacity: 0.6;
+
+} 
+/* Navigation Bar:logo and image */
+#logo{
+    margin: 10px 14px;
+    
+
+} 
+
+
+
+#logo img{
+     width: 120px; 
+     height: 86px;
+    margin: 1px 1px;
+
+} 
+
+/* Navigation Bar:List styling  */
+ #navbar ul{
+    display: flex; 
+ } 
+ #navbar ul li{
+    color: white;
+    
+    list-style: none;
+    font-size: 1.3rem; 
+
+}
+#navbar ul li a{
+    color: white;
+    
+    display: block;
+    padding: 30px 22px;
+    border-radius: 4px;
+    text-decoration: none; 
+    
+    
+
+  
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+} 
+
+/* home section */
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px; 
+    justify-content: center;
+    align-items: center; 
+     position: relative; 
+    height: 570px;
+    
+
+
+ }
+
+#home::before{
+    content: "";
+    background-image: url(image/background3.jpg);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 570px;
+    width: 100%;
+    
+    z-index: -1;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+} 
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font: size 1.5rem;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(145, 74, 74);
+    border-radius: 8px;
+    margin: 18px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+.center{
+    text-align: center;
+}
+/* services-section */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(186, 122, 122);
+    margin: 6px;
+    border-radius: 20px 20px;
+    background-color: rgb(134, 126, 126);
+
+}
+#services .box img{
+    height: 156px;
+    margin: auto;
+    display: block;
+}
+/* client section */
+
+#client-section{
+    position: relative;
+    height: 344px;
+
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 124px;
+
+
+}
+#client-item{
+    padding: 34px;
+}
+#client-section::before{
+    content: "";
+    background-image: url(image/food\ background1.jpg);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 344px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+/* contact-section */
+
+#contact{
+    position: relative;
+    height: 570px;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 570px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-image:url(image/contact\ back.jpg) ;
+     background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding:9px 20px ;
+
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+
+}
+#contact-box form{
+    width: 45%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+
+}
+
